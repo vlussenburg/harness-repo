@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: PIPELINE
+pipelineStages:
+- type: ENV_STATE
+  name: QA
+  parallel: false
+  workflowName: To-Do List K8s Basic
+- type: APPROVAL
+  name: Approval 1
+  parallel: false
+  properties:
+    userGroups:
+    - 8LJGfxLLTPyiMDckg-p4-w
+- type: ENV_STATE
+  name: Prod
+  parallel: false
+  workflowName: To-Do List K8s Canary
