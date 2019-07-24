@@ -1,0 +1,19 @@
+harnessApiVersion: '1.0'
+type: JENKINS
+authMechanism: UserName/Password
+password: safeharness:QjOq6zGFTducGZpEP095RA
+token: safeharness:E4pqsW2QTKODneuEvVlU-A
+url: http://db884369.ngrok.io
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: admin
